@@ -20,3 +20,96 @@ chunk {support-support-module} support-support-module.js, support-support-module
 chunk {transaction-transaction-module} transaction-transaction-module.js, transaction-transaction-module.js.map (transaction-transaction-module) 33.8 kB  [rendered]
 chunk {vendor} vendor.js, vendor.js.map (vendor) 7.72 MB [initial] [rendered]
 [34mℹ[39m [90m｢wdm｣[39m: Compiled successfully.
+** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+
+Date: 2018-09-25T09:58:28.138Z
+Hash: 94c24d4b5c40ac91bd88
+Time: 14322ms
+chunk {main} main.js, main.js.map (main) 1.91 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 671 bytes [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 5.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 2.11 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 151 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 327 kB [initial] [rendered]
+
+ERROR in node_modules/@angular/cdk/a11y/typings/focus-monitor/focus-monitor.d.ts(117,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/a11y/typings/focus-trap/focus-trap.d.ts(118,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/observers/typings/observe-content.d.ts(26,22): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/observers/typings/observe-content.d.ts(60,65): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/overlay/typings/position/connected-position-strategy.d.ts(33,106): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/stepper/typings/stepper.d.ts(98,92): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/text-field/typings/autofill.d.ts(39,22): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/text-field/typings/autofill.d.ts(49,29): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/text-field/typings/autofill.d.ts(58,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/text-field/typings/autosize.d.ts(24,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/tree/typings/nested-node.d.ts(33,28): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/tree/typings/nested-node.d.ts(42,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/tree/typings/padding.d.ts(29,95): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/tree/typings/tree.d.ts(90,28): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/cdk/tree/typings/tree.d.ts(109,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/core/src/application_ref.d.ts(8,10): error TS2305: Module '"/home/user/vkt/VKTTracker/node_modules/rxjs/Observable"' has no exported member 'Observable'.
+node_modules/@angular/core/src/event_emitter.d.ts(8,10): error TS2305: Module '"/home/user/vkt/VKTTracker/node_modules/rxjs/Subject"' has no exported member 'Subject'.
+node_modules/@angular/core/src/linker/query_list.d.ts(8,10): error TS2305: Module '"/home/user/vkt/VKTTracker/node_modules/rxjs/Observable"' has no exported member 'Observable'.
+node_modules/@angular/core/src/util/lang.d.ts(8,10): error TS2305: Module '"/home/user/vkt/VKTTracker/node_modules/rxjs/Observable"' has no exported member 'Observable'.
+node_modules/@angular/forms/src/form_providers.d.ts(36,9): error TS2315: Type 'ModuleWithProviders' is not generic.
+node_modules/@angular/material/autocomplete/typings/autocomplete-origin.d.ts(15,17): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/autocomplete/typings/autocomplete-origin.d.ts(18,21): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/autocomplete/typings/autocomplete-trigger.d.ts(104,27): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/autocomplete/typings/autocomplete.d.ts(83,69): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/badge/typings/badge.d.ts(48,63): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/bottom-sheet/typings/bottom-sheet-container.d.ts(39,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/button-toggle/typings/button-toggle.d.ts(136,21): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/button-toggle/typings/button-toggle.d.ts(156,104): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/checkbox/typings/checkbox.d.ts(88,20): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/checkbox/typings/checkbox.d.ts(101,29): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/chips/typings/chip-input.d.ts(16,28): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/chips/typings/chip-input.d.ts(47,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/chips/typings/chip-list.d.ts(46,28): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/chips/typings/chip-list.d.ts(176,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/core/typings/line/line.d.ts(23,55): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/core/typings/option/option.d.ts(57,27): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/core/typings/ripple/ripple-renderer.d.ts(84,69): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/core/typings/ripple/ripple.d.ts(90,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/datepicker/typings/calendar-body.d.ts(50,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/datepicker/typings/datepicker-input.d.ts(75,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/dialog/typings/dialog-container.d.ts(45,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/dialog/typings/dialog-content-directives.d.ts(23,60): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/dialog/typings/dialog-content-directives.d.ts(35,61): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/expansion/typings/expansion-panel.d.ts(38,12): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/grid-list/typings/grid-list.d.ts(29,27): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/grid-list/typings/grid-tile.d.ts(14,27): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/grid-list/typings/grid-tile.d.ts(33,27): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/icon/typings/icon.d.ts(55,29): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/input/typings/input.d.ts(22,28): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/input/typings/input.d.ts(91,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/list/typings/list.d.ts(48,27): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/list/typings/selection-list.d.ts(62,27): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/list/typings/selection-list.d.ts(125,27): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/menu/typings/menu-directive.d.ts(110,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/menu/typings/menu-item.d.ts(32,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/menu/typings/menu-trigger.d.ts(71,46): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/radio/typings/radio.d.ts(192,20): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/sidenav/typings/drawer.d.ts(79,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/sidenav/typings/drawer.d.ts(182,49): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/slide-toggle/typings/slide-toggle.d.ts(94,20): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/snack-bar/typings/snack-bar-container.d.ts(33,47): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/stepper/typings/step-header.d.ts(34,79): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/stepper/typings/stepper.d.ts(45,89): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/table/typings/cell.d.ts(45,54): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/table/typings/cell.d.ts(53,54): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/tabs/typings/ink-bar.d.ts(34,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/tabs/typings/tab-body.d.ts(75,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/tooltip/typings/tooltip.d.ts(84,49): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/tree/typings/node.d.ts(19,28): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/tree/typings/node.d.ts(22,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/tree/typings/node.d.ts(34,28): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/material/tree/typings/node.d.ts(39,30): error TS2315: Type 'ElementRef' is not generic.
+node_modules/@angular/platform-browser/src/browser.d.ts(45,9): error TS2315: Type 'ModuleWithProviders' is not generic.
+node_modules/@angular/router/src/router_module.d.ts(101,60): error TS2315: Type 'ModuleWithProviders' is not generic.
+node_modules/@angular/router/src/router_module.d.ts(105,38): error TS2315: Type 'ModuleWithProviders' is not generic.
+node_modules/rxjs/Observable.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Observable'.
+node_modules/rxjs/Subject.d.ts(1,15): error TS2307: Cannot find module 'rxjs-compat/Subject'.
+src/app/services/app.service.ts(11,2): error TS2554: Expected 0 arguments, but got 1.
+src/app/services/logger.service.ts(3,2): error TS2554: Expected 0 arguments, but got 1.
+
+[34mℹ[39m [90m｢wdm｣[39m: Failed to compile.
