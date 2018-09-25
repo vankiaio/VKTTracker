@@ -1,7 +1,7 @@
-💎 EOS Tracker
+💎 VKT Tracker
 ========================
 
-EOS Tracker is a Frontend based on Angular4 that connects to [EOS Tracker API](https://github.com/EOSEssentials/EOSTracker-API).
+万加链浏览器。
 
 📌 Getting Started
 ------------
