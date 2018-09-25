@@ -7,8 +7,8 @@
 ------------
 
 ```bash
-$ git clone git@github.com:EOSEssentials/EOSTracker.git
-$ cd EOSTracker
+$ git clone https://github.com/vankiaio/VKTTracker.git
+$ cd VKTTracker
 $ npm install
 ```
 
