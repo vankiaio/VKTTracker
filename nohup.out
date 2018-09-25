@@ -113,3 +113,36 @@ src/app/services/app.service.ts(11,2): error TS2554: Expected 0 arguments, but g
 src/app/services/logger.service.ts(3,2): error TS2554: Expected 0 arguments, but got 1.
 
 [34mℹ[39m [90m｢wdm｣[39m: Failed to compile.
+** Angular Live Development Server is listening on 0.0.0.0:4200, open your browser on http://localhost:4200/ **
+[34mℹ[39m [90m｢wdm｣[39m: wait until bundle finished: /
+[34mℹ[39m [90m｢wdm｣[39m: wait until bundle finished: /
+[34mℹ[39m [90m｢wdm｣[39m: wait until bundle finished: /
+[34mℹ[39m [90m｢wdm｣[39m: wait until bundle finished: /
+
+Date: 2018-09-25T10:42:54.914Z
+Hash: a29b59ba35965e30fbca
+Time: 37389ms
+chunk {account-account-module} account-account-module.js, account-account-module.js.map (account-account-module) 2.8 MB  [rendered]
+chunk {account-account-module~block-block-module~transaction-transaction-module} account-account-module~block-block-module~transaction-transaction-module.js, account-account-module~block-block-module~transaction-transaction-module.js.map (account-account-module~block-block-module~transaction-transaction-module) 66.4 kB  [rendered]
+chunk {block-block-module} block-block-module.js, block-block-module.js.map (block-block-module) 28.7 kB  [rendered]
+chunk {console-console-module} console-console-module.js, console-console-module.js.map (console-console-module) 10.4 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 285 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 227 kB [initial] [rendered]
+chunk {producer-producer-module} producer-producer-module.js, producer-producer-module.js.map (producer-producer-module) 205 kB  [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 8.42 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 2.11 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 151 kB [initial] [rendered]
+chunk {support-support-module} support-support-module.js, support-support-module.js.map (support-support-module) 239 kB  [rendered]
+chunk {transaction-transaction-module} transaction-transaction-module.js, transaction-transaction-module.js.map (transaction-transaction-module) 33.8 kB  [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 7.72 MB [initial] [rendered]
+[34mℹ[39m [90m｢wdm｣[39m: Compiled successfully.
+[34mℹ[39m [90m｢wdm｣[39m: Compiling...
+
+Date: 2018-09-25T10:51:36.430Z - Hash: a29b59ba35965e30fbca - Time: 599ms
+13 unchanged chunks
+[34mℹ[39m [90m｢wdm｣[39m: Compiled successfully.
+[34mℹ[39m [90m｢wdm｣[39m: Compiling...
+
+Date: 2018-09-25T11:03:51.598Z - Hash: a29b59ba35965e30fbca - Time: 462ms
+13 unchanged chunks
+[34mℹ[39m [90m｢wdm｣[39m: Compiled successfully.
