@@ -31,7 +31,7 @@
           <td>{{ 'RAM' | translate }}:</td>
           <td>
             <div style="padding:10px 0;">
-              Staked: {{account.ram_quota * ramQuote.price | number:'1.0-4'}} EOS
+              Staked: {{account.ram_quota * ramQuote.price | number:'1.0-4'}} VKT
               <br /> Used: {{account.ram_usage | toKB | number:'1.0-2'}} KB
               <br /> Max: {{account.ram_quota | toKB | number:'1.0-2'}} KB
             </div>
@@ -63,11 +63,11 @@
           <td>{{ 'Value' | translate }}:</td>
           <td>
             <div style="padding:10px 0;">
-              Balance: {{this.balance.liquid | number:'1.0-4'}} EOS
-              <br> CPU: {{this.balance.cpu | number:'1.0-4'}} EOS
-              <br> NET: {{this.balance.net | number:'1.0-4'}} EOS
-              <br> RAM: {{this.balance.ram | number:'1.0-4'}} EOS
-              <br> Total EOS: {{this.balance.total | number:'1.0-4'}} EOS
+              Balance: {{this.balance.liquid | number:'1.0-4'}} VKT
+              <br> CPU: {{this.balance.cpu | number:'1.0-4'}} VKT
+              <br> NET: {{this.balance.net | number:'1.0-4'}} VKT
+              <br> RAM: {{this.balance.ram | number:'1.0-4'}} VKT
+              <br> Total VKT: {{this.balance.total | number:'1.0-4'}} VKT
               <br> Total USD: {{this.balance.total * this.eosQuote.price | currency}}
             </div>
           </td>
