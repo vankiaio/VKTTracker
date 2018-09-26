@@ -86,7 +86,7 @@ export class AppService {
       map(data => data.rows[0]),
       map(data => {
         const base = Number(data.base.balance.replace('RAM', ''));
-        const quote = Number(data.quote.balance.replace('EOS', ''));
+        const quote = Number(data.quote.balance.replace('VKT', ''));
         return {
           ...data,
           price: quote / base

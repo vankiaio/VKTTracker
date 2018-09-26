@@ -62,8 +62,5 @@ export const LANGUAGES = [
 ];
 
 export const APIS = [
-  { name: 'EOS Dublin', endpoint: 'https://api1.eosdublin.io' },
-  { name: 'EOS New York', endpoint: 'http://api.eosnewyork.io' },
-  { name: 'Greymass', endpoint: 'https://eos.greymass.com' },
-  { name: 'Cypherglass', endpoint: 'http://api.cypherglass.com' }
+  { name: 'VKT Vankia@BeJing', endpoint: 'http://221.122.119.226:8888' },
 ]
