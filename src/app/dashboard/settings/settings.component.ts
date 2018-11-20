@@ -63,4 +63,5 @@ export const LANGUAGES = [
 
 export const APIS = [
   { name: 'VKT Vankia@BeiJing', endpoint: 'http://221.122.119.226:8888' },
+  { name: 'VKT Vankia@ShenZhen', endpoint: 'http://221.122.119.226:8888' }
 ]
