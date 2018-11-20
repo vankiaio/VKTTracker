@@ -1,0 +1,8 @@
+node_modules/*
+dist/*
+
+nohup.out
+.vscode
+.idea/
+*.iws
+.DS_Store
