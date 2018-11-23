@@ -17,12 +17,14 @@ export class AppService {
 
   latestBlockNumber$ = this.latestBlockNumberSource.asObservable();
   isMaintenance$: Observable<boolean>;
-  eosQuote$: Observable<any>;
+  // eosQuote$: Observable<any>;
+  vktQuote$: Observable<any>;
   ramQuote$: Observable<any>;
   info$: Observable<any>;
   latestBlock$: Observable<any>;
   recentBlocks$: Observable<any[]>;
   recentTransactions$: Observable<any[]>;
+  price_vkteth$ = 0;
 
   constructor(
     private http: HttpClient,
@@ -69,12 +71,17 @@ export class AppService {
       }),
       share()
     );
-    this.eosQuote$ = timer(0, EOS_QUOTE).pipe(
-      switchMap(() => this.getEOSTicker()),
-      filter(ticker => !!ticker.data),
-      map(ticker => ticker.data),
+    // this.eosQuote$ = timer(0, EOS_QUOTE).pipe(
+    //   switchMap(() => this.getEOSTicker()),
+    //   filter(ticker => !!ticker.data),
+    //   map(ticker => ticker.data),
+    //   share()
+    // );
+    this.vktQuote$ = timer(0, EOS_QUOTE).pipe(
+      switchMap(() => this.getVKTTicker()),
       share()
     );
+
     this.ramQuote$ = timer(0, RAM_QUOTE).pipe(
       switchMap(() => from(this.eosService.eos.getTableRows({
         json: true,
@@ -131,6 +138,64 @@ export class AppService {
   getEOSTicker(): Observable<CMCTicker> {
     return this.http.get<CMCTicker>('https://api.coinmarketcap.com/v2/ticker/1765/');
   }
+
+  async getVKTTicker() {
+    let ticker_vkteth = [];
+    let ticker_ethcny = [];
+    // import ccxt
+    const ccxt = require('ccxt');
+
+    // get vkteth price and vol
+    let bitforex = new ccxt.bitforex();
+    // load all markets from the exchange
+    let markets = await bitforex.loadMarkets();
+
+    const symbol_vkteth = 'VKT/ETH';
+    if (symbol_vkteth in bitforex.markets) {
+      ticker_vkteth = await bitforex.fetchTicker(symbol_vkteth);
+    }
+    console.log(ticker_vkteth);
+    
+    // get ethcny price
+    let coinmarketcap = new ccxt.coinmarketcap();
+    // load all markets from the exchange
+    markets = await coinmarketcap.loadMarkets();
+    
+    const symbol_ethcny = 'ETH/CNY';
+    if (symbol_ethcny in coinmarketcap.markets) {
+      ticker_ethcny = await coinmarketcap.fetchTicker(symbol_ethcny);
+    }
+    console.log(ticker_ethcny);
+
+    // get vkteth 1hour price
+    const ohlcv1h = await bitforex.fetchOHLCV(symbol_vkteth, '1d', 8);
+    const last1hPrice = ohlcv1h[ohlcv1h.length - 2]['close']; // 1h ago closing price
+    const last1dPrice = ohlcv1h[ohlcv1h.length - 2]['close']; // 1d ago closing price
+    const last1wPrice = ohlcv1h[1]['close']; // 1w ago closing price
+    console.log(ticker_vkteth['close']);
+    console.log(last1hPrice);
+    console.log(last1dPrice);
+    console.log(last1wPrice);
+    console.log(ohlcv1h);
+    
+    this.price_vkteth$ = ticker_vkteth['close'];
+
+    // const ohlcv1d = await bitforex.fetchOHLCV(symbol_vkteth, '7d');
+    // const last1dPrice = ohlcv1d[ohlcv1d.length - 1][index]; // closing price
+    // console.log(ohlcv1d);
+    
+    return {
+      'symbol': symbol_vkteth,
+      'price_vktcny': ticker_vkteth['close'] * ticker_ethcny['close'],
+      'price_vkteth': ticker_vkteth['close'],
+      'volume_24h': ticker_vkteth['baseVolume'],
+      'circulating_supply': 500000000,
+      'total_supply': 1000000000,
+      'percent_change_1h': (ticker_vkteth['close'] - last1hPrice) / last1hPrice,
+      'percent_change_1d': (ticker_vkteth['close'] - last1dPrice) / last1dPrice,
+      'percent_change_7d': (ticker_vkteth['close'] - last1wPrice) / last1wPrice
+    };
+}
 
   getBpJson(url: string): Observable<any> {
     return this.http.get<any>(`${url}/bp.json`);

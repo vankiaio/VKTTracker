@@ -45,7 +45,8 @@
     "path": "^0.12.7",
     "rxjs": "^6.3.1",
     "bower": "^1.8.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "ccxt": "^1.17.530"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.3",
@@ -55,7 +56,7 @@
     "@types/google.analytics": "0.0.36",
     "@types/jasmine": "^2.8.8",
     "@types/jasminewd2": "~2.0.2",
-    "@types/node": "^6.0.117",
+    "@types/node": "^6.14.2",
     "codelyzer": "^4.4.4",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
