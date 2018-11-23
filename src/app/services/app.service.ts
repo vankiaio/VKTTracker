@@ -147,6 +147,7 @@ export class AppService {
 
     // get vkteth price and vol
     let bitforex = new ccxt.bitforex();
+    bitforex.proxy = 'https://cors-anywhere.herokuapp.com/';
     // load all markets from the exchange
     let markets = await bitforex.loadMarkets();
 
