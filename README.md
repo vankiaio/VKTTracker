@@ -43,3 +43,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 oc/current/cookbook/configuration/web_server_configuration.html
+
+📌 Official run server
+------------
+pm2 start /usr/local/bin/ng -- serve --public-host tracker.devicexx.com --prod
