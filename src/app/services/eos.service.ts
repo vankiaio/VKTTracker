@@ -22,7 +22,7 @@ export class EosService {
     this.apiEndpoint$.subscribe(apiEndpoint => {
       this.eos = Eos({
         httpEndpoint: apiEndpoint,
-        blockId: environment.chainId
+        chainId: environment.chainId
       });
     });
   }
@@ -122,10 +122,10 @@ export class EosService {
     return this.getResult<any>(getBlock$);
   }
 
-  getTransactionRaw(blockId: number, id: string): Observable<Result<any>> {
+  getTransactionRaw(id: string): Observable<Result<any>> {
     const getTransaction$ = defer(() => from(this.eos.getTransaction({
       id: id,
-      block_num_hint: blockId
+      block_num_hint: 0
     })));
     return this.getResult<any>(getTransaction$);
   }

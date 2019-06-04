@@ -20,7 +20,7 @@ export class TransactionComponent implements OnInit {
 
   ngOnInit() {
     this.transaction$ = this.route.params.pipe(
-      switchMap(params => this.eosService.getTransactionRaw(+params.blockId, params.id))
+      switchMap(params => this.eosService.getTransactionRaw(params.id))
     );
   }
 

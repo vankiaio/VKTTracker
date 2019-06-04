@@ -11,7 +11,7 @@ const routes: Routes = [
     component: TransactionsComponent
   },
   {
-    path: ':blockId/:id',
+    path: ':id',
     component: TransactionComponent
   }
 ];

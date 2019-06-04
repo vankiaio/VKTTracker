@@ -56,7 +56,7 @@ export class SearchComponent implements OnInit {
         catchError(() => of(null)),
         switchMap(transaction => {
           if (transaction) {
-            this.router.navigate(['/transactions', transaction.block_num, transaction.id], { replaceUrl: true });
+            this.router.navigate(['/transactions', transaction.id], { replaceUrl: true });
             return empty();
           }
           return of(query);

@@ -27,7 +27,7 @@
         <ng-container matColumnDef="transactionId">
           <th mat-header-cell *matHeaderCellDef>{{ 'Transaction ID' | translate }}</th>
           <td mat-cell *matCellDef="let action">
-            <a [routerLink]="['/transactions',action.block_num,action.action_trace.trx_id]">
+            <a [routerLink]="['/transactions',action.action_trace.trx_id]">
               <id-64 [id]="action.action_trace.trx_id"></id-64>
             </a>
           </td>

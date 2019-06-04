@@ -5,7 +5,7 @@
     <ng-container matColumnDef="index">
       <th mat-header-cell *matHeaderCellDef>{{ 'Index' | translate }}</th>
       <td mat-cell *matCellDef="let action; let i = index">
-        <a [routerLink]="['/actions',transaction.block_num,transaction.id,i]">{{i + 1}}</a>
+        <a [routerLink]="['/actions',transaction.id,i]">{{i + 1}}</a>
       </td>
     </ng-container>
     <ng-container matColumnDef="account">

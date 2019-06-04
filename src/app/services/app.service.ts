@@ -55,7 +55,6 @@ export class AppService {
           const transactions = current.transactions.map(transaction => {
             return {
               ...transaction,
-              block_num: current.block_num,
               trx: typeof transaction.trx === 'string' ? { id: transaction.trx } : transaction.trx
             };
           })
