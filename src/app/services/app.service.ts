@@ -139,7 +139,7 @@ export class AppService {
   }
 
   getVKTTicker(): Observable<any[]> {
-    return this.http.get<any[]>('https://cors-anywhere.herokuapp.com/http://221.122.119.226:3030/vktapi?showtype=vkttracker_info');
+    return this.http.get<any[]>('https://cors-anywhere.herokuapp.com/http://dapi.devicexx.com:3030/vktapi?showtype=vkttracker_info');
 }
 
   getBpJson(url: string): Observable<any> {
