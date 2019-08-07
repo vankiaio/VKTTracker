@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
-  walletUrl: 'https://walleteos.com',
-  votingUrl: 'https://eosportal.io',
+  walletUrl: 'https://github.com/vankiaio/VKScatterDesktop/releases',
+  votingUrl: 'https://#',
   appName: 'VKT Tracker',
   logoUrl: '/assets/logo.png',
   blockchainUrl: 'http://221.122.119.226:8888',

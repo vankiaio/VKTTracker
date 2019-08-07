@@ -45,8 +45,7 @@
     "path": "^0.12.7",
     "rxjs": "^6.3.1",
     "bower": "^1.8.0",
-    "zone.js": "^0.8.26",
-    "ccxt": "^1.17.530"
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.3",
