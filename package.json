@@ -36,7 +36,7 @@
     "core-js": "^2.5.7",
     "eosjs": "^16.0.8",
     "express": "^4.16.3",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "ng-common": "^0.8.13",
     "ngx-json-viewer": "^2.3.1",
     "ngx-moment": "^3.1.0",
